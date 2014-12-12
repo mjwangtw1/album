@@ -1,5 +1,7 @@
 $(function (){
   
+  swal({   title: "Welcome!",   text: "Leo is a gentlemen",   timer: 2000 });
+
   //Bind the event when clicked on a thumb
   $('.thumb>img').on('click mouseover',function(e){
     e.preventDefault();
@@ -22,8 +24,6 @@ $(function (){
     //show the Mid photo
     $('.show').attr('src',src_mid);
     $('.desc').html(img_alt);
-    
-    
     
   }
   
