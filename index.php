@@ -5,7 +5,30 @@
 	echo '3nd try - 3:51pm 2014.12.15';
 
 
+	//Prepared array: 
+	$album_thumb_array = array(
+		array(
+			'img_url'=>'https://farm4.staticflickr.com/3755/10565638896_530c0595c5_s.jpg',
+			'img_alt'=>'Bar@Pittsburgh',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg',
+			'img_alt'=>'Famous Primantis sandwich',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm3.staticflickr.com/2851/10565986203_8255a93880_s.jpg',
+			'img_alt'=>'Robber duck and ducklings',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg',
+			'img_alt'=>'Famous Primantis sandwich',
+			 'tag' => 'pittsburgh'
+			),
 
+		);
 
 
 ?>
@@ -28,12 +51,25 @@
 
 	<div class="thumb_zone">
 	<span class="thumb">
-		<img src="https://farm4.staticflickr.com/3755/10565638896_530c0595c5_s.jpg" width="75" height="75" alt="Bar@Pittsburgh" value="img1">
 
-		<img src="https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg" width="75" height="75" alt="Famous Primantis sandwich" value="img2">
+		<?php
 
-		<img src="https://farm3.staticflickr.com/2851/10565986203_8255a93880_s.jpg" width="75" height="75" alt="Robber duck and ducklings" value="img3">
-	 
+		if ( ! is_array($album_thumb_array))
+		{
+			echo 'Something wrong with array';
+		}
+		else
+		{
+
+			//Loop thru array
+			foreach($album_thumb_array as $key => $value)
+			{
+				echo '<img src="' . $value['img_url'] . '" width="75" height="75" alt="' . $value['img_alt']. '" value="img' . $key . '" >';
+			}
+		}
+
+		?>
+
 	</span>
 	<span class="desc"></span>
 	</div>
@@ -41,8 +77,6 @@
 	    <img class="show" src="">
 	    
 	</div>
-
-	<!-- <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script> -->
 
 	<!--  JS - LIB-->
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
