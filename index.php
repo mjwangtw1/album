@@ -10,7 +10,7 @@
 
 ?>
 
-<link rel="stylesheet" type="text/css" href="/css/lib/sweet-alert.css">
+<link rel="stylesheet" type="text/css" href="./css/lib/sweet-alert.css">
 
 
 <div class="thumb_zone">
@@ -33,7 +33,7 @@
 
 <!-- LIB-->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="/js/lib/sweet-alert.min.js"></script>
+<script src="./js/lib/sweet-alert.min.js"></script>
 
 
-<script type="text/javascript" src="/js/album.js"></script>
+<script type="text/javascript" src="./js/album.js"></script>
