@@ -5,3 +5,14 @@ body {
 img {
 	padding: 1px 1px 1px 1px;
 }
+
+.thumbs
+{
+	background-color: lightgreen;
+}
+
+.topblock
+{
+	display: inline;
+	width: 50%;
+}

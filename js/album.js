@@ -10,7 +10,6 @@
     
     //console.log(thumbname);
     var src_mid = thumbname.src.replace('s.jpg', 'c.jpg');
-
     
     //show the Mid photo
     $('.show').attr('src' , src_mid);
@@ -31,6 +30,16 @@ $(function (){
        
   })
   
+  //Try sweet alert
+  $('#manage').on('click', function(){
+    swal(
+      { 
+        type: "info",
+        title: "Function not done!",
+        text: "SweetAlert \nOh isn't it sweet? \n (Close in 2s)",   
+        timer: 2000 });
+  })
+
 
   
 });

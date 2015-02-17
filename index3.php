@@ -56,7 +56,7 @@
             <div class="form-group">
               <input type="password" placeholder="Password" class="form-control">
             </div>
-            <button type="submit" class="btn btn-success">Manage</button>
+            <button type="submit" class="btn btn-success" id="manage">Manage</button>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -67,27 +67,34 @@
       <div class="container">
         <h1>Hi there! </h1>
         <p>This is a trial album</p>
-        <p><a class="btn btn-primary btn-md" href="#" role="button">Pitt Life</a></p>
+        <!-- add button here for more tags -->
+        <p><a class="btn btn-primary btn-md" href="#" role="button" id="pitt_life">Pitt Life</a>
+        <a class="btn btn-primary btn-md" href="#" role="button" id="random_moment">Random Moments</a></p>
+
       </div>
+      <div class="container thumbs">
+        Haha
+      </div>
+      
     </div>
 
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>Pittsburgh Life</h2>
+          <p>Life in Pittsburgh is somewhat bittersweet. This album contains some cool Pittsburgh Moments</p>
+          <p><a class="btn btn-default" href="#" role="button">Pitt Life &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2>Heading</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Random Moment &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <h2>Heading</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Fun Stuff &raquo;</a></p>
         </div>
       </div>
 
