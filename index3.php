@@ -78,6 +78,18 @@
       
     </div>
 
+    <!-- With Grid-->
+    <div class="jumbotrona">
+      <div class="containerx">
+        <div class="row">
+          <div class="span4"> aaa</div>
+          <div class="span8"> bbb</div>
+        </div>
+      </div>
+    </div>  
+    <!-- With Grid-->
+
+
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
