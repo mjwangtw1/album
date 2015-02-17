@@ -1,3 +1,4 @@
+"use strict";
 
   //toss in Object
   function showImg(thumbname){
@@ -12,7 +13,7 @@
 
     
     //show the Mid photo
-    $('.show').attr('src',src_mid);
+    $('.show').attr('src' , src_mid);
     $('.desc').html(img_alt);
     
   }
