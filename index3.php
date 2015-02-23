@@ -26,7 +26,7 @@
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -65,29 +65,22 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Hi there! </h1>
-        <p>This is a trial album</p>
-        <!-- add button here for more tags -->
-        <p><a class="btn btn-primary btn-md" href="#" role="button" id="pitt_life">Pitt Life</a>
-        <a class="btn btn-primary btn-md" href="#" role="button" id="random_moment">Random Moments</a></p>
+        <span class="left_nav split">
+          <h1>Hi there! </h1>
+          <p>This is a trial album</p>
+          <!-- add button here for more tags -->
+          <p><a class="btn btn-primary btn-md" href="#" role="button" id="pitt_life">Pitt Life</a>
+          <a class="btn btn-primary btn-md" href="#" role="button" id="random_moment">Random Moments</a></p>
+        </span>
+
+        <span class="right_nav split">
+          <div class="image_thumbs zone">
+            Test here
+          </div>
+        </span>
 
       </div>
-      <div class="container thumbs">
-        Haha
-      </div>
-      
     </div>
-
-    <!-- With Grid-->
-    <div class="jumbotrona">
-      <div class="containerx">
-        <div class="row">
-          <div class="span4"> aaa</div>
-          <div class="span8"> bbb</div>
-        </div>
-      </div>
-    </div>  
-    <!-- With Grid-->
 
 
     <div class="container">

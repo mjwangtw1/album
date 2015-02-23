@@ -1,3 +1,26 @@
+
+.split{
+	display: inline-block;
+
+}
+
+.left_nav
+{
+	width: 35%;
+
+}
+
+.right_nav
+{
+	width: 55%;
+	background-color: orange;
+}
+
+
+
+
+
+
 body {
 	font-family: Georgia;
 }
@@ -6,13 +29,9 @@ img {
 	padding: 1px 1px 1px 1px;
 }
 
-.thumbs
-{
-	background-color: lightgreen;
-}
 
-.topblock
+h1
 {
-	display: inline;
-	width: 50%;
+	color: red;
+
 }

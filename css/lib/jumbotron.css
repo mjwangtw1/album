@@ -2,9 +2,16 @@
 body {
   padding-top: 50px;
   padding-bottom: 20px;
+  color: red;
 }
 
-.container
+.left_nav
 {
-	width: 50%;
+	width: 35%;
+}
+
+.right_nav
+{
+	width: 55%;
+	background-color: orange;
 }
