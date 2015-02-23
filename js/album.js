@@ -24,7 +24,7 @@ $(function (){
 
 
   //Bind the event when clicked on a thumb
-  $('.thumb>img').on('click mouseover',function(e){
+  $('.image_thumbs>img').on('click mouseover',function(e){
     e.preventDefault();
     showImg(this);
        

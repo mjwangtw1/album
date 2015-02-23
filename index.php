@@ -1,4 +1,82 @@
 
+<?php
+	$album_thumb_array = array(
+		array(
+			'img_url'=>'https://farm4.staticflickr.com/3755/10565638896_530c0595c5_s.jpg',
+			'img_alt'=>'Bar@Pittsburgh',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg',
+			'img_alt'=>'Famous Primantis sandwich',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm3.staticflickr.com/2851/10565986203_8255a93880_s.jpg',
+			'img_alt'=>'Robber duck and ducklings',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg',
+			'img_alt'=>'Famous Primantis sandwich',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg',
+			'img_alt'=>'Famous Primantis sandwich',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg',
+			'img_alt'=>'Famous Primantis sandwich',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg',
+			'img_alt'=>'Famous Primantis sandwich',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg',
+			'img_alt'=>'Famous Primantis sandwich',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg',
+			'img_alt'=>'Famous Primantis sandwich',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg',
+			'img_alt'=>'Famous Primantis sandwich',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg',
+			'img_alt'=>'Famous Primantis sandwich',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg',
+			'img_alt'=>'Famous Primantis sandwich',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg',
+			'img_alt'=>'Famous Primantis sandwich',
+			 'tag' => 'pittsburgh'
+			),
+		array(
+			'img_url'=>'https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg',
+			'img_alt'=>'Famous Primantis sandwich',
+			 'tag' => 'pittsburgh'
+			),
+
+		);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,10 +97,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <!-- CSS Customize -->
     <link rel="stylesheet" type="text/css" href="./css/album.css">
-
-
-
-
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -75,12 +149,52 @@
 
         <span class="right_nav split">
           <div class="image_thumbs zone">
-            Test here
+            <?php
+            		if ( ! is_array($album_thumb_array))
+					{
+						echo 'Oops! <!--error fetching data-->';
+					}
+					else
+					{
+
+						//Loop thru array
+						foreach($album_thumb_array as $key => $value)
+						{
+							echo '<img src="' . $value['img_url'] . '" width="75" height="75" alt="' . $value['img_alt']. '" value="img' . $key . '" >';
+						}
+
+					}
+
+            ?>
           </div>
         </span>
 
       </div>
     </div>
+
+
+
+    <div class="container show_midsize_photo">
+    	<h3 class="desc"> </h3>
+
+
+
+   		 <div class="row">
+    		<div class="col-md-10">
+    		    <img class="show" src="">
+    	</div>
+
+    	<div class="row">
+    		<div class="col-md-2">
+    	
+    		    <p><a class="btn btn-default" href="#" role="button">More&raquo;</a></p>
+   		</div>
+
+
+    </div>
+
+
+
 
 
     <div class="container">

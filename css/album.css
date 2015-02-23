@@ -16,10 +16,10 @@
 	background-color: orange;
 }
 
-
-
-
-
+.show_midsize_photo
+{
+	display: block;
+}
 
 body {
 	font-family: Georgia;
@@ -30,8 +30,3 @@ img {
 }
 
 
-h1
-{
-	color: red;
-
-}
