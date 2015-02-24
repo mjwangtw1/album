@@ -139,35 +139,46 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <span class="left_nav split">
-          <h1><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Hi There!</h1>
-          <p>This is a trial album</p>
-          <!-- add button here for more tags -->
-          <p><a class="btn btn-primary btn-md" href="#" role="button" id="pitt_life">Pitt Life</a>
-          <a class="btn btn-primary btn-md" href="#" role="button" id="random_moment">Random Moments</a></p>
-        </span>
-
-        <span class="right_nav split">
-          <div class="image_thumbs zone">
+        <div class="row">
+          <div class="col-md-4">
+            <h1><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Hi There!</h1>
+            <p>This is a trial album</p>
+            <!-- add button here for more tags -->
+            <p><a class="btn btn-primary btn-md" href="#" role="button" id="pitt_life">Pitt Life</a>
+            <a class="btn btn-primary btn-md" href="#" role="button" id="random_moment">Random Moments</a></p>
+          </div>
+          <div class="col-md-7">
+             <div class="image_thumbs zone">
             <?php
-            		if ( ! is_array($album_thumb_array))
-					{
-						echo 'Oops! <!--error fetching data-->';
-					}
-					else
-					{
+                  if ( ! is_array($album_thumb_array))
+            {
+              echo 'Oops! <!--error fetching data-->';
+            }
+            else
+            {
 
-						//Loop thru array
-						foreach($album_thumb_array as $key => $value)
-						{
-							echo '<img src="' . $value['img_url'] . '" width="75" height="75" alt="' . $value['img_alt']. '" value="img' . $key . '" >';
-						}
+              //Loop thru array
+              foreach($album_thumb_array as $key => $value)
+              {
+                echo '<img src="' . $value['img_url'] . '" width="75" height="75" alt="' . $value['img_alt']. '" value="img' . $key . '" >';
+              }
 
-					}
+            }
 
             ?>
+            </div>
+
           </div>
-        </span>
+          <div class="col-md-1">
+            AAAA
+          </div>
+
+
+
+        </div><!--class="row"-->
+
+
+
 
       </div>
     </div>
