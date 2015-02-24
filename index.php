@@ -139,14 +139,26 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
+
         <div class="row">
+
+
+
           <div class="col-md-4">
             <h1><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Hi There!</h1>
-            <p>This is a trial album</p>
+           <p>This is a trial album</p>
             <!-- add button here for more tags -->
-            <p><a class="btn btn-primary btn-md" href="#" role="button" id="pitt_life">Pitt Life</a>
+<!--             <p><a class="btn btn-primary btn-md" href="#" role="button" id="pitt_life">Pitt Life</a>
             <a class="btn btn-primary btn-md" href="#" role="button" id="random_moment">Random Moments</a></p>
+ -->
+
+
+
           </div>
+
+
+
+
           <div class="col-md-7">
              <div class="image_thumbs zone">
             <?php
@@ -177,12 +189,46 @@
 
         </div><!--class="row"-->
 
+        <div class="tabbable tabs-below">
+
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a href="#tab1" data-toggle="tab">Pitt Life</a>
+            </li>  
+            <li>
+              <a href="#tab1" data-toggle="tab">Random Stuff</a>
+            </li>
+            <li>
+              <a href="#tab1" data-toggle="tab">Fun Stuff</a>
+            </li>
+            <li>
+              <a href="#tab1" data-toggle="tab">Work Time</a>
+            </li>
+                   <li>
+              <a href="#tab1" data-toggle="tab">NYC</a>
+            </li>
+                   <li>
+              <a href="#tab1" data-toggle="tab">Travel</a>
+            </li>
+
+          </ul>
+
+
+        </div>
 
 
 
       </div>
     </div>
 
+    <div class="container">
+
+
+
+
+
+
+    </div>
 
 
     <div class="container show_midsize_photo">
