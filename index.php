@@ -67,8 +67,8 @@
 			 'tag' => 'pittsburgh'
 			),
 		array(
-			'img_url'=>'https://farm8.staticflickr.com/7323/10565637196_2296f583fd_s.jpg',
-			'img_alt'=>'Famous Primantis sandwich',
+			'img_url'=>'https://farm6.staticflickr.com/5536/10565542735_4a91b159e4_s.jpg',
+			'img_alt'=>'Checking stuff',
 			 'tag' => 'pittsburgh'
 			),
 
@@ -124,12 +124,12 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">
-            <div class="form-group">
+<!--             <div class="form-group">
               <input type="text" placeholder="Email" class="form-control">
             </div>
             <div class="form-group">
               <input type="password" placeholder="Password" class="form-control">
-            </div>
+            </div> -->
             <button type="submit" class="btn btn-success" id="manage">Manage</button>
           </form>
         </div><!--/.navbar-collapse -->
@@ -145,15 +145,8 @@
 
 
           <div class="col-md-4">
-            <h1><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Hi There!</h1>
-           <p>This is a trial album</p>
-            <!-- add button here for more tags -->
-<!--             <p><a class="btn btn-primary btn-md" href="#" role="button" id="pitt_life">Pitt Life</a>
-            <a class="btn btn-primary btn-md" href="#" role="button" id="random_moment">Random Moments</a></p>
- -->
-
-
-
+            <h1 class="title"><span class="glyphicon glyphicon-picture" aria-hidden="true">  </span> Hi There!</h1>
+            <p class="title_desc">This is a trial album</p>
           </div>
 
 
@@ -189,30 +182,29 @@
 
         </div><!--class="row"-->
 
-        <div class="tabbable tabs-below">
+        <div class="tabs-below">
 
-          <ul class="nav nav-tabs">
+          <ul class="nav nav-pills">
             <li class="active">
-              <a href="#tab1" data-toggle="tab">Pitt Life</a>
+              <a href="#tab1" data-toggle="tab" id="cat_pitt_life" class="cat" data-desc="Life in Pittsburgh is somewhat bittersweet. This album contains some cool Pittsburgh Moments">Pitt Life</a>
             </li>  
             <li>
-              <a href="#tab1" data-toggle="tab">Random Stuff</a>
+              <a href="#tab1" data-toggle="tab" id="cat_rand_stuff" class="cat" data-desc="Just some random stuffs around">Rand Stuff</a>
             </li>
             <li>
-              <a href="#tab1" data-toggle="tab">Fun Stuff</a>
+              <a href="#tab1" data-toggle="tab" id="cat_fun_stuff" class="cat" data-desc="some wtf fun stuff">Fun Stuff</a>
             </li>
             <li>
-              <a href="#tab1" data-toggle="tab">Work Time</a>
+              <a href="#tab1" data-toggle="tab" id="cat_work_time" class="cat" data-desc="moments at work">Work Time</a>
             </li>
-                   <li>
-              <a href="#tab1" data-toggle="tab">NYC</a>
+            <li>
+              <a href="#tab1" data-toggle="tab" id="cat_nyc" class="cat" data-desc="NYC the big apple. Glarious and Sexy">NYC</a>
             </li>
-                   <li>
-              <a href="#tab1" data-toggle="tab">Travel</a>
+            <li>
+              <a href="#tab1" data-toggle="tab" id="cat_travel" class="cat" data-desc="Some of the best moments of travels">Travel</a>
             </li>
 
           </ul>
-
 
         </div>
 
@@ -244,7 +236,7 @@
     	<div class="row">
     		<div class="col-md-2">
     	
-    		    <p><a class="btn btn-default" href="#" role="button">More&raquo;</a></p>
+    		    <p><a class="btn btn-default enlarge_photo" href="#" role="button">More&raquo;</a></p>
    		</div>
 
 
