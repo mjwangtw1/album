@@ -11,6 +11,7 @@
     //show the Mid photo
     $('.show').attr('src' , src_mid);
     $('.desc').html(img_alt);
+    add_more_button();
     
   }
 
@@ -46,6 +47,33 @@
     return orig_img_url.replace('s.jpg', replace_word);
   }
 
+  function add_more_button()
+  {
+    $('.more_button>a').remove();
+
+    var button = '<a class="btn btn-default enlarge_photo" href="#" role="button">More&raquo;</a>';
+    //alert(button);
+    $('.more_button').append(button);
+    bind_actions();
+
+  }
+
+  function bind_actions()
+  {
+    $('.enlarge_photo').on('click', function(){
+
+    var enlarged_image_url = $('.show').attr('src');
+
+    swal({
+
+      title    : $('.desc').html(),
+      imageUrl : enlarged_image_url
+      
+    });
+
+  })
+  }
+
 
 
 
@@ -77,18 +105,7 @@ $(function (){
 
   })
   
-  $('.enlarge_photo').on('click', function(){
 
-    var enlarged_image_url = $('.show').attr('src');
-
-    swal({
-
-      title    : $('.desc').html(),
-      imageUrl : enlarged_image_url
-      
-    });
-
-  })
 
 
 });

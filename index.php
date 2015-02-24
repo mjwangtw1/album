@@ -229,14 +229,14 @@
 
 
    		 <div class="row">
-    		<div class="col-md-10">
+    		<div class="col-md-9">
     		    <img class="show" src="">
     	</div>
 
     	<div class="row">
-    		<div class="col-md-2">
+    		<div class="col-md-3">
     	
-    		    <p><a class="btn btn-default enlarge_photo" href="#" role="button">More&raquo;</a></p>
+    		    <p class="more_button"></p>
    		</div>
 
 
