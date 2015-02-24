@@ -140,7 +140,7 @@
     <div class="jumbotron">
       <div class="container">
         <span class="left_nav split">
-          <h1>Hi there! </h1>
+          <h1><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Hi There!</h1>
           <p>This is a trial album</p>
           <!-- add button here for more tags -->
           <p><a class="btn btn-primary btn-md" href="#" role="button" id="pitt_life">Pitt Life</a>
