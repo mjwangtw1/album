@@ -67,14 +67,34 @@
     swal({
 
       title    : $('.desc').html(),
-      imageUrl : enlarged_image_url
+      imageUrl : enlarged_image_url,
+      imageSize: "500x500"
       
     });
 
   })
   }
 
+  //Trying the button and connect to Flickr
+  function flickr_conn()
+  {
+    swal('yo Daug!');
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
 
 
 //DOM Ready
@@ -105,6 +125,11 @@ $(function (){
 
   })
   
+
+  $('#try_flickr').on('click',function(){
+
+    flickr_conn();
+  })
 
 
 
