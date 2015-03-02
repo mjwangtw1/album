@@ -68,7 +68,7 @@
 
       title    : $('.desc').html(),
       imageUrl : enlarged_image_url,
-      imageSize: "500x500"
+      imageSize: "800x600"
       
     });
 
