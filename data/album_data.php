@@ -82,7 +82,7 @@ $data = array(
 			'name' =>'Pitt Life',
 			'id'   =>'cat_pitt_life',
 			'cat'  =>'cat',
-			'desc' =>'Life in Pittsburgh is somewhat bittersweet. This album contains some cool Pittsburgh Moments'
+			'desc' =>'just some cool Pittsburgh Moments'
 			),
 			array(
 			'name' =>'Rand Stuff',
