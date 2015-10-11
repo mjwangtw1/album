@@ -2,7 +2,7 @@
 
 $data = array(
 	'site_title'=> 'Project Photo w/Bootstrap+Flickr Dynamic',
-	'nav_bar_title'=>'Mou Photos 2015/3/2',
+	'nav_bar_title'=>'Mou Photos 2015/10/11',
 	'welcome_title'=>'Yo Dawg!',
 	'welcome_message'=>'Trial album w/BT3+Flickr',
 	'image_thumb_array'=> array(
