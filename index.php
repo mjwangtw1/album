@@ -1,12 +1,14 @@
 
 <?php
 
+  const CORE_DATA = './_core/core_info.php';
+  
   //EXTRACT data outside
 
   //Locate the data path
   $data_path = './data/album_data.php';
 
-  if( ! (is_file($data_path) && file_exists($data_path)))
+  if ( ! (is_file($data_path) && file_exists($data_path)))
   {
     echo 'File not found:: check file path and file';
   }
@@ -15,6 +17,16 @@
      //Note: the include file must be PHP or it will echo right away  
      include_once($data_path);
   }
+
+  if ( ! (is_file(self::CORE_DATA)) && file_exists(self::CORE_DATA))
+  {
+    echo 'Load Core DATA fail!';
+  }
+  else
+  {
+    include_once(self::CORE_DATA);
+  }
+
 
 ?>
 
@@ -92,7 +104,10 @@
             <p class="title_desc"><?php echo $data['welcome_message']?></p>
           </div>
 
+          <!-- Test here -->
+          <?php echo $core['data']; ?>
 
+          <!-- Test done -->
 
 
           <div class="col-md-7">
