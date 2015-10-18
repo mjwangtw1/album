@@ -1,7 +1,7 @@
 
 <?php
 
-  const CORE_DATA = './_core/core_info.php';
+ //const CORE_DATA = './_core/core_info.php';
   
   //EXTRACT data outside
 
@@ -18,14 +18,14 @@
      include_once($data_path);
   }
 
-  if ( ! (is_file(self::CORE_DATA)) && file_exists(self::CORE_DATA))
-  {
-    echo 'Load Core DATA fail!';
-  }
-  else
-  {
-    include_once(self::CORE_DATA);
-  }
+  // if ( ! (is_file(self::CORE_DATA)) && file_exists(self::CORE_DATA))
+  // {
+  //   echo 'Load Core DATA fail!';
+  // }
+  // else
+  // {
+  //   include_once(self::CORE_DATA);
+  // }
 
 
 ?>
