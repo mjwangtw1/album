@@ -1,35 +1,30 @@
 
 <?php
 
- //const CORE_DATA = './_core/core_info.php';
-  
-  //EXTRACT data outside
+  define('CORE_DATA', './_core/core_info.php');  //Some System Core, should be ignored.
+  define('ALBUM_DATA', './data/album_data.php'); //Locate the data path
 
-  //Locate the data path
-  $data_path = './data/album_data.php';
-
-  if ( ! (is_file($data_path) && file_exists($data_path)))
+  if ( ! (is_file(ALBUM_DATA) && file_exists(ALBUM_DATA)))
   {
     echo 'File not found:: check file path and file';
   }
   else
   {
      //Note: the include file must be PHP or it will echo right away  
-     include_once($data_path);
+     include_once(ALBUM_DATA);
   }
 
-  // if ( ! (is_file(self::CORE_DATA)) && file_exists(self::CORE_DATA))
-  // {
-  //   echo 'Load Core DATA fail!';
-  // }
-  // else
-  // {
-  //   include_once(self::CORE_DATA);
-  // }
+  if ( ! (is_file(CORE_DATA)) && file_exists(CORE_DATA))
+  {
+    echo 'Load Core DATA fail!';
+  }
+  else
+  {
+    include_once(CORE_DATA);
+  }
 
-
+  
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -234,7 +229,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Mou 2015</p>
+        <p>&copy; Mou 2015 <span class="code">CODE</span></p>
       </footer>
     </div> <!-- /container -->
 
