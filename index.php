@@ -80,7 +80,7 @@
               <input type="password" placeholder="Password" class="form-control">
             </div> -->
             <button type="" class="btn btn-success" id="try_flickr">Connect</button>
-            <button type="submit" class="btn btn-success" id="manage">Manage</button>
+            <button type="submit" class="btn btn-success" id="manage">Manage.</button>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
